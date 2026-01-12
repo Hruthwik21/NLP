@@ -1,0 +1,23 @@
+--- 1. Cosine Similarity Comparison ---
+Pair                 | My SGNS Model   | Gensim (GloVe) 
+-------------------------------------------------------
+man-woman          | 0.2972          | 0.8860
+king-queen          | 0.5052          | 0.7839
+paris-france         | 0.4727          | 0.8025
+apple-food           | 0.1199          | 0.4988
+
+--- 2. Word Analogy Task ---
+man : king :: woman : comnena
+paris : france :: rome : supremacy
+walk : walking :: swim : exoskeleton
+
+--- 3. Bias Detection (Projection onto 'he-she' axis) ---
+Positive values -> closer to 'he', Negative values -> closer to 'she'
+Occupation      | Bias Score
+------------------------------
+engineer        | 0.0914
+nurse           | -0.1370
+doctor          | 0.0486
+teacher         | 0.0135
+mechanic        | -0.0175
+homemaker       | Not in vocab
